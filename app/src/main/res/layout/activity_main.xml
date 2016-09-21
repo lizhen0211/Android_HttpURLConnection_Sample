@@ -23,8 +23,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:onClick="onPostPairClick"
-        android:text="post 发送key-value请求" />
+        android:onClick="onPostURLEncodedClick"
+        android:text="post urlencoded发送请求" />
 
     <Button
         android:id="@+id/send_post_json_request"
@@ -32,7 +32,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:onClick="onPostJsonClick"
-        android:text="post 发送json请求" />
+        android:text="post json发送请求" />
 
     <Button
         android:id="@+id/send_post_xml_request"
