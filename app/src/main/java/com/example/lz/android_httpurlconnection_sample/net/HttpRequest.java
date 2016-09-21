@@ -76,9 +76,9 @@ public class HttpRequest {
                 conn = (HttpURLConnection) url.openConnection();
                 conn.setRequestMethod(methodType.value);
                 conn.setDoInput(true);
-                conn.setDoOutput(true);
                 conn.setUseCaches(false);
                 if (methodType == MethodType.POST) {
+                    conn.setDoOutput(true);
                     addHeader(conn);
                     byte[] body = getBody();
                     if (body != null) {
